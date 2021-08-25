@@ -1,0 +1,12 @@
+.banner {
+    background-color: $anthracite;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: $breakpoint-large) {
+        padding: 3rem;
+    }
+
+}

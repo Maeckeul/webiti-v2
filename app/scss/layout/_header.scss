@@ -1,0 +1,44 @@
+.header {
+    max-height: 100px;
+    width: 100%;
+    background-color: $light-grey;
+
+    &-mobile {
+        height: 100%;
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-small) {
+            display: flex;       
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $breakpoint-large) {
+            display: none;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &-laptop {
+        display: none; 
+
+        @media screen and (min-width: $breakpoint-large) {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+    }
+}
+
+.header--is-fixed {
+    position: fixed;
+    top: 0; 
+}

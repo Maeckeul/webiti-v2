@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 0 1rem; 
+
+    @media screen and (min-width: $breakpoint-small) {
+        width: 540px;
+        padding: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        width: 720px;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
+        width: 960px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        width: 1140px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        width: 1320px;
+    }
+}

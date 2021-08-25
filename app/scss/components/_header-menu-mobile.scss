@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu::after {
+    content:'≡';
+    font-size: 70px;
+}

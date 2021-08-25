@@ -1,0 +1,24 @@
+.presentation-text {
+    width: 100%;
+
+    &-answer {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: $font-family-bold;
+    }
+
+    &-response {
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 1.1em;
+        font-family: $font-family-medium;
+        color: $grey;
+    }
+
+    .separator {
+        background-color: $light-grey;
+        margin: 1rem auto;
+        width: 100px;
+        height: 2px;
+    }
+}

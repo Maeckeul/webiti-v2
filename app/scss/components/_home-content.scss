@@ -1,0 +1,48 @@
+.home-content {
+
+    &-title {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-img {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .text {
+            font-size: 1.2em;
+            font-family: $font-family-medium;
+            color: rgb(233, 217, 173);
+            text-align: center;
+            margin: 1rem 0;
+            opacity: 0.6;
+
+            @media screen and (min-width: $breakpoint-small) {
+                font-size: 1.5em;
+            }
+
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 2em;
+            }
+        }
+
+        .typewrite {
+            font-size: 1.2em;
+            font-family: $font-family-reg;
+            color: white;
+            text-align: center;
+            margin: 1rem 0;
+
+            @media screen and (min-width: $breakpoint-small) {
+                font-size: 1.5em;
+            }
+
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 2em;
+            }
+        }
+    }
+}

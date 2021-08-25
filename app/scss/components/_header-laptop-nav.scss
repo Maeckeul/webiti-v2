@@ -1,0 +1,30 @@
+.header-laptop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .header-left {
+        display: flex;
+
+        .item {
+            margin: 0 1rem;
+        }
+    }
+
+    .header-center {
+        display: flex;
+
+        .item {
+            margin: 0 1rem;
+        }
+    }
+
+    .header-right {
+        display: flex;
+
+        .item {
+            margin: 0 1rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.banner {
+
+    &-text {
+        color: $white;
+        margin: 0.3rem 0;
+
+        .bold {
+            font-family: $font-family-medium;
+        }
+
+        .pink {
+            color: $pink;
+            font-family: $font-family-medium;
+        }
+    }
+}

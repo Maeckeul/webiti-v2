@@ -1,0 +1,51 @@
+.presentation-items {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-large) {
+        display: flex;
+        margin: 3rem 0;
+    }
+
+    .item {
+        margin: 4rem 1rem;
+        flex: 1;
+
+        @media screen and (min-width: $breakpoint-large) {
+            width: 33,3%;
+        }
+
+        &-content {
+
+            .title {
+                text-align: center;
+                color: $grey;
+                font-family: $font-family-medium;
+
+                .pink {
+                    color: $pink;
+                }
+            }
+
+            .img {
+                width: 100%;
+                border-radius: 50%;
+                margin: 1rem 0;
+
+                @media screen and (min-width: $breakpoint-large) {
+                    height: 320px;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                text-align: center;
+                font-size: 1rem;
+                color: $grey;
+
+                .bold {
+                    font-family: $font-family-medium;
+                }
+            }
+        }
+    }
+}
