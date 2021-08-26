@@ -80,8 +80,43 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+
+    var elementsWeb = document.getElementsByClassName('web-typewrite');
+    for (var i=0; i<elementsWeb.length; i++) {
+        var toRotate = elementsWeb[i].getAttribute('data-type');
+        var period = elementsWeb[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elementsWeb[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".web-typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+
+    var elementsSkills = document.getElementsByClassName('skills-text-writer-content');
+    for (var i=0; i<elementsSkills.length; i++) {
+        var toRotate = elementsSkills[i].getAttribute('data-type');
+        var period = elementsSkills[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elementsSkills[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".skills-text-writer-content > .wrap { border-right: 0.08em solid #747474}";
     document.body.appendChild(css);
 };
 
+$('.web').parallax({
+  imageSrc: './images/web.jpeg',
+  zIndex: 0
+});
+
 $('.home').parallax({imageSrc: './images/home-v2.jfif'});
+
+

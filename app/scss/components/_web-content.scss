@@ -1,0 +1,97 @@
+.web-content {
+
+    .container {
+
+        .web-content-title {
+            text-align: center;
+            color: $white;
+            font-family: $font-family-bold;
+            font-size: 1.5em;
+            padding-bottom: 1rem;
+
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 2.5em;
+            }
+        }
+
+        .web-content-text {
+            color: $white;
+            text-align: center;
+            font-size: 0.85em;
+            padding: 0.2rem 0;
+            
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 1em;
+            }
+        }
+
+        .web-typewrite {
+            color: $white;
+            text-align: center;
+            font-size: 0.85em;
+            padding: 0.2rem 0;
+
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 1em;
+            }
+        }
+
+        .separator {
+            height: 2px;
+            background-color: $pink;
+            width: 100px;
+            margin: 1.5rem auto;
+        }
+
+        .web-content-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            margin: 0 auto;
+            justify-content: center;
+            padding-bottom: 4rem;
+
+            @media screen and (min-width: $breakpoint-small) {
+                width: 450px;
+            }
+
+            @media screen and (min-width: $breakpoint-medium) {
+                width: 100%;
+                margin: 0;
+            }
+
+            .web-content-items {
+                margin: 0.2rem;
+
+                &-img {
+                    width: 80px;
+                    height: 90px;
+                    border-radius: 20px;
+
+                    @media screen and (min-width: $breakpoint-small) {
+                        width: 110px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+
+        .web-content-text-bottom {
+            color: $white;
+            text-align: center;
+            font-size: 0.85em;
+            padding: 0.2rem 0;
+            max-width: 720px;
+            margin: 0 auto;
+            
+            @media screen and (min-width: $breakpoint-medium) {
+                font-size: 1em;
+            }
+
+            .pink {
+                color: $pink;
+                font-family: $font-family-medium;
+            }
+        }
+    }
+}

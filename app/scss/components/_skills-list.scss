@@ -1,0 +1,22 @@
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+
+        .img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .text {
+            padding-top: 1rem;
+            font-family: $font-family-medium;
+        }
+    }
+}

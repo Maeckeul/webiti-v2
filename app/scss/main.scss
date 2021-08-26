@@ -16,6 +16,7 @@
     'layout/home',
     'layout/main',
     'layout/presentation',
+    'layout/skills',
     'layout/web';
 
 @import
@@ -25,7 +26,11 @@
     'components/header-menu-mobile',
     'components/home-content',
     'components/presentation-items',
-    'components/presentation-text';
+    'components/presentation-text',
+    'components/skills-list', 
+    'components/skills-text',
+    'components/skills-text-writer',
+    'components/web-content';
     
 @import
     'shame';

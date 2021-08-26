@@ -1,8 +1,13 @@
 .presentation {
     min-height: 100vh;
-    padding: 4rem 0;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $breakpoint-large) {
+        padding-top: 0;
+    }
 
     .container {
         
