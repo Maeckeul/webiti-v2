@@ -14,3 +14,109 @@
         }
     }
 }
+
+.banner-link-top {
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: $breakpoint-large) {
+            width: 50%;
+            border-left: 1px solid $white;
+        }
+    
+        &-text {
+            color: $white;
+            margin: 0.5rem 0 0.5rem 3rem;
+
+            @media screen and (min-width: $breakpoint-small) {
+                font-size: 1.3em;
+            }
+
+            .link {
+                color: $pink;
+            }
+        }
+    }
+}
+
+.banner-link-bottom {
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (min-width: $breakpoint-large) {
+            width: 50%;
+            border-right: 1px solid $white;
+        }
+    
+        &-text {
+            color: $white;
+            margin: 0.5rem 3rem 0.5rem 0;
+            text-align: end;
+
+            @media screen and (min-width: $breakpoint-small) {
+                font-size: 1.3em;
+            }
+
+            .link {
+                color: $pink;
+            }
+        }
+    }
+}
+
+.banner-contact {
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            color: $white; 
+            text-align: center;
+            font-family: $font-family-medium;
+
+            @media screen and (min-width: $breakpoint-small) {
+                font-size: 1.3em;
+            }
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+
+            .item {
+                margin: 0 0.3rem;
+
+                .link {
+                    color: $white;
+                    font-size: 1em;
+                    font-family: $font-family-medium;
+
+                    @media screen and (min-width: $breakpoint-small) {
+                        font-size: 1.3em;
+                    }
+
+                    .fa-linkedin-square {
+                        color: $white;
+                        font-size: 1.5em;
+                    }
+                    
+                    .fa-facebook-square {
+                        color: $pink;
+                        font-size: 1.5em;
+                    }
+
+                    .fa-envelope-o {
+                        color: $white;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}

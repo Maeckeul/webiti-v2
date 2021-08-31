@@ -3,9 +3,10 @@
 $black: #000000;
 $white: #FFFFFF;
 $anthracite: #222222;
-$grey: #747474;
-$light-grey: #EEEEEE;
-$pink: #FF6C6C;
+$grey-menu: #EEEEEE;
+$grey: rgb(116, 116, 116);
+$light-grey: rgb(238, 238, 238);
+$pink: #ff6c6c;
 
 // Fonts
 
@@ -81,6 +82,10 @@ $font-family-archi: "Architects Daughter", sans-serif;
 $font-size: 16px; 
 $font-size-medium: 18px; 
 $font-size-large: 20px;
+$font-size-h2-sm: 1.5em;
+$font-size-h2-large: 2.5em;
+$font-size-text-sm: 1.1em;
+$font-size-text-large: 1.5em;
 
 // Breakpoints
 

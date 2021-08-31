@@ -1,0 +1,40 @@
+.fonctionnalities-content {
+    padding: 4rem 1rem;
+
+    &-title {
+        color: $white;
+        font-size: $font-size-h2-sm;
+        font-family: $font-family-bold;
+
+        @media screen and (min-width: $breakpoint-small) {
+            font-size: 2.5em;
+        }
+    }
+
+    &-text {
+        color: $white;
+        font-size: $font-size-text-sm;
+        font-family: $font-family-medium;
+        margin: 1rem 0;
+
+        @media screen and (min-width: $breakpoint-small) {
+            font-size: 1.5em;
+        }
+    }
+
+    .separator {
+        height: 2px;
+        background-color: $pink;
+        width: 100px;
+    }
+
+    &-text-bottom {
+        color: $white;
+        max-width: 800px;
+
+        .pink {
+            color: $pink;
+            font-family: $font-family-medium;
+        }
+    }
+}

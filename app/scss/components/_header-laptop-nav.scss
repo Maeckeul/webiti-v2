@@ -1,14 +1,25 @@
 .header-laptop-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
 
     .header-left {
         display: flex;
+        justify-content: center;
+        flex: 1;
 
         .item {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
+
+            &-link {
+                color: $grey;
+            }
+
+            &-link:hover {
+                color: $pink;
+                transition: $duration-fast;
+            }
         }
     }
 
@@ -16,15 +27,26 @@
         display: flex;
 
         .item {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
         }
     }
 
     .header-right {
         display: flex;
+        justify-content: center;
+        flex: 1;
 
         .item {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
+
+            &-link {
+                color: $grey;
+            }
+
+            &-link:hover {
+                color: $pink;
+                transition: $duration-fast;
+            }
         }
     }
 }

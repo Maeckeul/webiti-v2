@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web'Iti</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
   <div class="wrapper">
@@ -14,7 +16,7 @@
           <h1 class="home-content-title">
             <img src="./images/logo-webiti.png" alt="Logo Web'Iti" class="home-content-title-img">
             <span class="text">Développement Web</span>
-            <span class="text">Création de site</span>
+            <span class="text">Création de site & Application</span>
             <span class="text">Graphisme</span>
             <p class="typewrite" data-period="1000" data-type='[ "Tahiti et ses îles","Nous vous proposons nos services", "N&#39;hésitez pas à nous contacter!", ":)"]'>
               <span class="wrap"></span>
@@ -38,13 +40,10 @@
           <nav class="header-laptop-nav">
             <ul class="header-left">
               <li class="item">
-                <a href="./images/" class="item-link">A propos</a>
+                <a href="#presentation" class="item-link">A propos</a>
               </li>
               <li class="item">
-                <a href="#" class="item-link">Compétences</a>
-              </li>
-              <li class="item">
-                <a href="#" class="item-link">Services</a>
+                <a href="#skills" class="item-link">Compétences</a>
               </li>
             </ul>
             <ul class="header-center">
@@ -56,13 +55,10 @@
             </ul>
             <ul class="header-right">
               <li class="item">
-                <a href="#" class="item-link">Portfolio</a>
+                <a href="#services" class="item-link">Services</a>
               </li>
               <li class="item">
-                <a href="#" class="item-link">Contact</a>
-              </li>
-              <li class="item">
-                <a href="#" class="item-link">Réseaux sociaux</a>
+                <a href="#contacts" class="item-link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -70,7 +66,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="presentation">
+      <section class="presentation" id="presentation">
         <div class="container">
           <div class="presentation-text">
             <p class="presentation-text-answer">Qui Sommes-nous?</p>
@@ -141,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <div class="skills-text">
             <h2 class="title">Nos Compétences</h2>
@@ -180,6 +176,10 @@
             <li class="skills-list-items">
               <img src="images/wp.png" alt="" class="img">
               <p class="text">WordPress</p>
+            </li>
+            <li class="skills-list-items">
+              <img src="images/prestashop.png" alt="" class="img">
+              <p class="text">Prestashop</p>
             </li>
             <li class="skills-list-items">
               <img src="images/laravel.png" alt="" class="img">
@@ -225,26 +225,201 @@
           </div>
         </div>
       </section>
-      <section class="services">
-
+      <section class="services" id="services">
+        <div class="services-content">
+         <div class="container">
+           <div class="services-content-text">
+              <h2 class="title">Les Services Web</h2>
+              <p class="text">Made in Web'iti</p>
+           </div>
+           <div class="services-content-items">
+            <div class="items-left">
+              <ul class="list">
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="bi bi-cart-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">E-boutique</h3>
+                      <p class="item-text">Conception & développement d'E-boutique sur mesure.</p>
+                      <ul class="item-content-list">
+                        <li class="item-content-list-item"><i class="bi bi-check2-square"></i>Module de paiement sécurisé</li>
+                        <li class="item-content-list-item"><i class="bi bi-check2-square"></i>Gestion Commande</li>
+                        <li class="item-content-list-item"><i class="bi bi-check2-square"></i>Suivie Commande</li>
+                        <li class="item-content-list-item"><i class="bi bi-check2-square"></i>Code Promo</li>
+                        <li class="item-content-list-item"><i class="bi bi-check2-square"></i>Panier Ajax</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">Intégration Web</h3>
+                      <p class="item-text">Conception/Intégration des templates et chartes graphiques conforment aux normes W3C quel que soit l'environnement technologique. Optimisation du rendu cross-browser/multi-support/responsive design.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="bi bi-wrench"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">Maintenance Web</h3>
+                      <p class="item-text">Service de gestion d'hébérgement, garanti d'accessibilité, intégration régulière des dernières mises à jour de sécurité et veille générale hebdomadaire.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="items-right">
+              <ul class="list">
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="fa fa-wordpress"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">Blog</h3>
+                      <p class="item-text">Développement de plateformes de gestion de contenu. Création de modules complémentaires et sur mesure.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="bi bi-search"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">Référencement</h3>
+                      <p class="item-text">Amélioration de la visibilité d'un domaine. Optimisation des positions des pages web dans les résultats de recherche Google.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="item-content">
+                    <div class="item-content-logo">
+                      <div class="icon">
+                        <i class="bi bi-search"></i>
+                      </div>
+                    </div>
+                    <div class="item-content-text">
+                      <h3 class="item-title">Graphisme</h3>
+                      <p class="item-text">Maquettage de sites vitrine, E-commerce et applications. Création de logos, d'animations et d'illustrations.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+           </div>
+         </div>
+        </div>
       </section>
-      <section class="banner">
-
+      <section class="banner-link-top">
+        <div class="banner-content">
+          <p class="banner-content-text">
+            Vous avez une <a href="#" class="link">question</a> ? <i class="bi bi-mailbox"></i>
+          </p>
+          <p class="banner-content-text">
+            Vous êtes intéressé par une <a href="#" class="link">estimation</a> ? <i class="bi bi-file-earmark-pdf"></i>
+          </p>
+        </div>
       </section>
       <section class="fonctionnalities">
-
+        <div class="fonctionnalities-content">
+          <h2 class="fonctionnalities-content-title">Fonctionnalités Web</h2>
+          <p class="fonctionnalities-content-text">Tous types de fonctionnalités web peuvent être envisagés</p>
+          <div class="separator"></div>
+          <ul class="fonctionnalities-content-list">
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Connexion.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Inscription.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Newsletter.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Confirmation.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Erreur.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Commentaires.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Partage.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+            <li class="fonctionnalities-content-items">
+              <img src="images/Item Recherche.png" alt="" class="fonctionnalities-content-items-img">
+            </li>
+          </ul>
+          <p class="fonctionnalities-content-text-bottom">Toute charte graphique, layout, idées sont envisageables. Chez <span class="pink">Web'iti</span> il n'y a pas de limite technique dans la conception ou la création d'un site internet.</p>
+        </div>
       </section>
-      <section class="banner">
-
-      </section>
-      <section class="portfolio">
-
+      <section class="banner-link-bottom">
+        <div class="banner-content">
+          <p class="banner-content-text">
+            Vous avez besoin d'un <a href="#" class="link">conseil</a> ? 
+          </p>
+          <p class="banner-content-text">
+            Vous avez un projet web à <a href="#" class="link">réaliser</a> ? 
+          </p>
+        </div>
       </section>
       <section class="supports">
-
+        <div class="container">
+          <div class="supports-text">
+            <h2 class="title">Supports</h2>
+            <p class="text">Cross browser / Multi-supports / Responsive Design</p>
+            <div class="separator"></div>
+            <p class="content">Chez <span class="pink">Web'iti</span> les projets web conçus sont crossbrowser, autrement dit ils seront adaptés à chaque type d'écran.</p>
+          </div>
+          <ul class="supports-list">
+            <li class="supports-list-items">
+              <img src="images/Laptop.png" alt="" class="supports-list-items-img">
+            </li>
+            <li class="supports-list-items">
+              <img src="images/Laptop.png" alt="" class="supports-list-items-img">
+            </li>
+            <li class="supports-list-items">
+              <img src="images/Laptop.png" alt="" class="supports-list-items-img">
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="banner">
-
+      <section class="banner-contact">
+        <div class="banner-content">
+          <p class="text">Restons en contact.</p>
+          <ul class="list">
+            <li class="item">
+              <a href="" class="link"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+            <li class="item">
+              <a href="" class="link"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li class="item">
+              <a href="" class="link"><i class="fa fa-envelope-o" aria-hidden="true"></i> cmaeckeul@gmail.com</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </div>

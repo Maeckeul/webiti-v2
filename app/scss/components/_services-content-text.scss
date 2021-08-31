@@ -1,0 +1,24 @@
+.services-content-text {
+
+    .title {
+        text-align: center;
+        font-size: $font-size-h2-sm;
+        color: $white;
+        font-family: $font-family-bold;
+
+        @media screen and (min-width: $breakpoint-small) {
+            font-size: 2.5em;
+        }
+    }
+
+    .text {
+        color: $white;
+        padding: 1rem 0;
+        font-size: $font-size-text-sm;
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-small) {
+            font-size: 1.5em;
+        }
+    }
+}

@@ -112,11 +112,14 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-$('.web').parallax({
-  imageSrc: './images/web.jpeg',
-  zIndex: 0
-});
-
 $('.home').parallax({imageSrc: './images/home-v2.jfif'});
 
+$('.web').parallax({
+  imageSrc: './images/web.jpeg',
+  zIndex: 0,
+});
+
+$('.services').parallax({imageSrc: './images/star.png',});
+
+$('.fonctionnalities').parallax({imageSrc: './images/ideas.jpg',});
 

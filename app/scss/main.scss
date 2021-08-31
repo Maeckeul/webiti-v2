@@ -12,24 +12,33 @@
 
 @import 
     'layout/banner',
+    'layout/fonctionnalities',
     'layout/header',
     'layout/home',
     'layout/main',
     'layout/presentation',
+    'layout/services',
     'layout/skills',
+    'layout/supports',
     'layout/web';
 
 @import
     'components/banner-text',
+    'components/fonctionnalities-content',
+    'components/fonctionnalities-content-list',
     'components/header-logo-mobile',
     'components/header-laptop-nav',
     'components/header-menu-mobile',
     'components/home-content',
     'components/presentation-items',
     'components/presentation-text',
+    'components/services-content-items',
+    'components/services-content-text',
     'components/skills-list', 
     'components/skills-text',
     'components/skills-text-writer',
+    'components/supports-list',
+    'components/supports-text',
     'components/web-content';
     
 @import

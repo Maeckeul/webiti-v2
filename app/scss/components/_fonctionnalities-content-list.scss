@@ -1,0 +1,20 @@
+.fonctionnalities-content-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    justify-content: center;
+    max-width: 1100px;
+
+    @media screen and (min-width: $breakpoint-small) {
+        justify-content: flex-start;
+    }
+
+    .fonctionnalities-content-items {
+        margin: 1rem 1rem 1rem 0;
+
+        @media screen and (min-width: $breakpoint-small) {
+            margin: 1rem 2rem 1rem 0;
+        }
+
+    }
+}
