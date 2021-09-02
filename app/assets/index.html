@@ -15,24 +15,32 @@
         <div class="container">
           <h1 class="home-content-title">
             <img src="./images/logo-webiti.png" alt="Logo Web'Iti" class="home-content-title-img">
-            <span class="text">Développement Web</span>
-            <span class="text">Création de site & Application</span>
-            <span class="text">Graphisme</span>
-            <p class="typewrite" data-period="1000" data-type='[ "Tahiti et ses îles","Nous vous proposons nos services", "N&#39;hésitez pas à nous contacter!", ":)"]'>
-              <span class="wrap"></span>
-            </p>
+            <div class="text-content" id="home-content">
+              <span class="text">Développement Web</span>
+              <span class="text">Création de site & Application</span>
+              <span class="text">Graphisme</span>
+              <p class="typewrite" data-period="1000" data-type='[ "Tahiti et ses îles","Nous vous proposons nos services", "N&#39;hésitez pas à nous contacter!", ":)"]'>
+                <span class="wrap"></span>
+              </p>
+            </div>
           </h1>
+          <div class="arrow" id="arrow">
+            <a href="#presentation" class="arrow-link scroll">
+              <i class="fa fa-long-arrow-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="scrollex"></div>
+    <div id="presentation"></div>
     <header class="header">
       <div class="header-mobile">
         <div class="container">
           <div class="logo">
             <img src="./images/logo-webiti.png" alt="" class="logo-image">
           </div>
-          <div class="menu"></div>
+          <div class="menu" id="menu-button"></div>
         </div>
       </div>
       <div class="header-laptop">
@@ -40,10 +48,10 @@
           <nav class="header-laptop-nav">
             <ul class="header-left">
               <li class="item">
-                <a href="#presentation" class="item-link">A propos</a>
+                <a href="#presentation" class="item-link scroll">A propos</a>
               </li>
               <li class="item">
-                <a href="#skills" class="item-link">Compétences</a>
+                <a href="#skills" class="item-link scroll">Compétences</a>
               </li>
             </ul>
             <ul class="header-center">
@@ -55,42 +63,66 @@
             </ul>
             <ul class="header-right">
               <li class="item">
-                <a href="#services" class="item-link">Services</a>
+                <a href="#services" class="item-link scroll">Services</a>
               </li>
               <li class="item">
-                <a href="#contacts" class="item-link">Contact</a>
+                <a href="#contacts" class="item-link scroll">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+    <nav id="menu" class="burger-nav">
+      <ul class="burger-nav-list">
+        <li class="burger-nav-list-item">
+          <a href="#presentation" class="burger-nav-list-item-link scroll">
+            <i class="fa fa-home"></i> A propos
+          </a>
+        </li>
+        <li class="burger-nav-list-item">
+          <a href="#skills" class="burger-nav-list-item-link scroll">
+            <i class="fa fa-database"></i> Compétences
+          </a>
+        </li>
+        <li class="burger-nav-list-item">
+          <a href="#services" class="burger-nav-list-item-link scroll">
+            <i class="fa fa-suitcase"></i> Services
+          </a>
+        </li>
+        <li class="burger-nav-list-item">
+          <a href="#contacts" class="burger-nav-list-item-link scroll">
+            <i class="fa fa-mobile" aria-hidden="true"></i> Contacts
+          </a>
+        </li>
+      </ul>
+    </nav>
     <main class="main">
-      <section class="presentation" id="presentation">
+      <section class="presentation">
         <div class="container">
           <div class="presentation-text">
-            <p class="presentation-text-answer">Qui Sommes-nous?</p>
+            <h2 class="presentation-text-answer" id="title">Qui Sommes-nous?</h2>
             <p class="presentation-text-response">Et tu me diras qui tu es</p> 
             <div class="separator"></div>         
           </div>
           <ul class="presentation-items">
             <li class="item">
               <div class="item-content">
-                <h2 class="title">Développeur <span class="pink">Web</span></h2>
+                <h3 class="title">Développeur <span class="pink">Web</span></h2>
                 <img src="images/dev.jpg" alt="Illustration du développeur web" class="img">
                 <p class="text"><span class="bold">Création de site web </span>sur mesure, développement de fonctionnalitées web sur mesure</p>
               </div>
             </li>
             <li class="item">
               <div class="item-content">
-                <h2 class="title">Graphiste</h2>
+                <h3 class="title">Graphiste</h2>
                 <img src="images/design.jpg" alt="Illustration du graphiste" class="img">
                 <p class="text"><span class="bold">Création </span>de logos, maquettes et illustrations</p>
               </div>
             </li>
             <li class="item">
               <div class="item-content">
-                <h2 class="title">Patenté / <span class="pink">Freelance</span></h2>
+                <h3 class="title">Patenté / <span class="pink">Freelance</span></h2>
                 <img src="images/freelance.jpg" alt="Illustration d'un indépendant" class="img">
                 <p class="text"><span class="bold">Pas d'engagement, pas de contraintes,</span> vous souhaitez une prestation web, nous vous livrons.</p>
               </div>
@@ -99,10 +131,10 @@
         </div>
       </section>
       <section class="banner">
-        <p class="banner-text">Vous êtes à la recherche d'un professionnel pour créer un site internet?</p>
-        <p class="banner-text">Vous recherchez <span class="bold">un développeur web ou un graphiste</span>, ou les 2, freelance, pour vous épauler techniquement?</p>
-        <p class="banner-text">Ou bien vous voulez tout simplement profiter des opportunités du web pour développer votre activité?</p>
-        <p class="banner-text">Je vous accompagne dans la création d'une <span class="pink">solution web sur mesure.</span></p>
+        <p class="banner-text" id="banner">Vous êtes à la recherche d'un professionnel pour créer un site internet?</p>
+        <p class="banner-text" id="banner1">Vous recherchez <span class="bold">un développeur web ou un graphiste</span>, ou les 2, freelance, pour vous épauler techniquement?</p>
+        <p class="banner-text" id="banner2">Ou bien vous voulez tout simplement profiter des opportunités du web pour développer votre activité?</p>
+        <p class="banner-text" id="banner3">Je vous accompagne dans la création d'une <span class="pink">solution web sur mesure.</span></p>
       </section>
       <section class="web">
         <div class="web-content">
@@ -113,7 +145,7 @@
               <span class="wrap"></span>
             </p>
             <div class="separator"></div>
-            <ul class="web-content-list">
+            <ul class="web-content-list" id="web">
               <li class="web-content-items">
                 <img src="images/layout.png" alt="" class="web-content-items-img">
               </li>
@@ -133,11 +165,12 @@
                 <img src="images/layout5.png" alt="" class="web-content-items-img">
               </li>
             </ul>
-            <p class="web-content-text-bottom">Toute charte graphique, layout, idées sont envisageables. Chez <span class="pink">Web'iti</span> il n'y a pas de limite technique dans la conception ou la création d'un site internet.</p>
+            <p class="web-content-text-bottom" id="web1">Toute charte graphique, layout, idées sont envisageables. Chez <span class="pink">Web'iti</span> il n'y a pas de limite technique dans la conception ou la création d'un site internet.</p>
           </div>
         </div>
       </section>
-      <section class="skills" id="skills">
+      <div id="skills"></div>
+      <section class="skills">
         <div class="container">
           <div class="skills-text">
             <h2 class="title">Nos Compétences</h2>
@@ -225,7 +258,8 @@
           </div>
         </div>
       </section>
-      <section class="services" id="services">
+      <div id="services"></div>
+      <section class="services">
         <div class="services-content">
          <div class="container">
            <div class="services-content-text">
@@ -345,7 +379,7 @@
           <h2 class="fonctionnalities-content-title">Fonctionnalités Web</h2>
           <p class="fonctionnalities-content-text">Tous types de fonctionnalités web peuvent être envisagés</p>
           <div class="separator"></div>
-          <ul class="fonctionnalities-content-list">
+          <ul class="fonctionnalities-content-list" id="fonctionnalities">
             <li class="fonctionnalities-content-items">
               <img src="images/Item Connexion.png" alt="" class="fonctionnalities-content-items-img">
             </li>
@@ -371,7 +405,7 @@
               <img src="images/Item Recherche.png" alt="" class="fonctionnalities-content-items-img">
             </li>
           </ul>
-          <p class="fonctionnalities-content-text-bottom">Toute charte graphique, layout, idées sont envisageables. Chez <span class="pink">Web'iti</span> il n'y a pas de limite technique dans la conception ou la création d'un site internet.</p>
+          <p class="fonctionnalities-content-text-bottom" id="fonctionnalities1">Toute charte graphique, layout, idées sont envisageables. Chez <span class="pink">Web'iti</span> il n'y a pas de limite technique dans la conception ou la création d'un site internet.</p>
         </div>
       </section>
       <section class="banner-link-bottom">
@@ -397,10 +431,10 @@
               <img src="images/Laptop.png" alt="" class="supports-list-items-img">
             </li>
             <li class="supports-list-items">
-              <img src="images/Laptop.png" alt="" class="supports-list-items-img">
+              <img src="images/Tablet.png" alt="" class="supports-list-items-img">
             </li>
             <li class="supports-list-items">
-              <img src="images/Laptop.png" alt="" class="supports-list-items-img">
+              <img src="images/Phone.png" alt="" class="supports-list-items-img">
             </li>
           </ul>
         </div>
@@ -421,7 +455,56 @@
           </ul>
         </div>
       </section>
+      <div id="contacts"></div>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts-text">
+            <h2 class="title">Contacts</h2>
+            <p class="text">Nous répondrons à toutes vos questions</p>
+            <div class="separator"></div>
+            <ul class="list">
+              <li class="item">
+                <a href="telto:+68989612176" class="link">
+                  <i class="fa fa-phone" ></i> +689 89 61 21 76
+                </a>
+              </li>
+              <li class="item">
+                <a href="mailto:cmaeckeul@gmail.com" class="link">
+                  <i class="fa fa-envelope-o"></i> cmaeckeul@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form action="submit" method="post" class="contacts-form">
+            <div class="left">
+              <div class="name">
+                <input type="text" class="name-input" name="name" id="name" placeholder="Votre nom" required>
+              </div>
+              <div class="society">
+                <input type="text" class="society-input" name="society" id="society" placeholder="Société">
+              </div>
+              <div class="email">
+                <input type="email" class="email-input" name="email" id="email" placeholder="Votre Email">
+              </div>
+              <div class="subject">
+                <input type="text" class="subject-input" name="subject" id="subject" placeholder="Votre Sujet">
+              </div>
+            </div>
+            <div class="right">
+              <div class="message">
+                <textarea class ="message-input" id="message" name="message" placeholder="Votre message"></textarea>
+              </div>
+              <div class="submit">
+                <input type="submit" class="submit-input" value="Envoyer">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <p class="content">© Conception et réalisation par <span class="pink">Web'iti</span> - Web'iti créateur site web Tahiti</p>
+    </footer>
   </div>
   <script src="js/app.js"></script>
   <script src="js/parallax.min.js"></script>

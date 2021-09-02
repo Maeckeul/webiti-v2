@@ -12,7 +12,10 @@
 
 @import 
     'layout/banner',
+    'layout/burger-nav',
+    'layout/contacts',
     'layout/fonctionnalities',
+    'layout/footer',
     'layout/header',
     'layout/home',
     'layout/main',
@@ -24,8 +27,11 @@
 
 @import
     'components/banner-text',
+    'components/contacts-form',
+    'components/contacts-text',
     'components/fonctionnalities-content',
     'components/fonctionnalities-content-list',
+    'components/footer-content',
     'components/header-logo-mobile',
     'components/header-laptop-nav',
     'components/header-menu-mobile',

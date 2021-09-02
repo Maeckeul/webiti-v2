@@ -1,0 +1,179 @@
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    
+    @media screen and (min-width: $breakpoint-large) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: inherit;
+    }
+
+    .left {
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-large) {
+            margin-right: 0.5rem;
+        }
+
+        .name {
+            margin: 1rem 0;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+                height: 60px;
+                background-color: #eeeeee;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $grey;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+
+            &-input:focus {
+                border: 0.1px $pink solid !important;
+            }
+
+            input:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+            }
+        }
+
+        .society {
+            margin: 1rem 0;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+                height: 60px;
+                background-color: #eeeeee;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $grey;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+
+            &-input:focus {
+                border: 0.1px $pink solid !important;
+            }
+
+            input:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+            }
+        }
+
+        .email {
+            margin: 1rem 0;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+                height: 60px;
+                background-color: #eeeeee;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $grey;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+
+            &-input:focus {
+                border: 0.1px $pink solid !important;
+            }
+
+            input:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+            }
+        }
+
+        .subject {
+            margin: 1rem 0;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+                height: 60px;
+                background-color: #eeeeee;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $grey;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+
+            &-input:focus {
+                border: 0.1px $pink solid !important;
+            }
+
+            input:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+            }
+        }
+    }
+
+    .right {
+        width: 100%;
+
+        @media screen and (min-width: $breakpoint-large) {
+            margin-left: 0.5rem;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            width: 100%;
+
+            @media screen and (min-width: $breakpoint-large) {
+                margin: 1rem 0;
+            }
+
+            &-input {
+                min-width: 100%;
+                max-width: 100%;
+                height: 209px;
+                background-color: #eeeeee;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $grey;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+
+            &-input:focus {
+                border: 0.1px $pink solid !important;
+            }
+
+            textarea:focus {
+                outline-offset: 0px !important;
+                outline: none !important;
+            }
+        }
+
+        .submit {
+            width: 100%;
+            
+            &-input {
+                width: 100%;
+                height: 60px;
+                background-color: $black;
+                border: 0.1px #cfcfcf solid;
+                border-radius: 3px;
+                font-size: 1em;
+                color: $white;
+                padding: 1rem;
+                font-family: $font-family-reg;
+            }
+        }
+    }
+}

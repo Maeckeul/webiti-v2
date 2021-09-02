@@ -6,8 +6,8 @@
         font-size: 1.5em;
         font-family: $font-family-bold;
 
-        @media screen and (min-width: $breakpoint-small) {
-            font-size: 2.5em;
+        @media screen and (min-width: $breakpoint-medium) {
+            font-size: $font-size-h2-large;
         }
     }
 
@@ -18,14 +18,14 @@
         font-family: $font-family-medium;
         color: $grey;
 
-        @media screen and (min-width: $breakpoint-small) {
+        @media screen and (min-width: $breakpoint-medium) {
             font-size: 1.5em;
         }
     }
 
     .separator {
         background-color: $light-grey;
-        margin: 1rem auto;
+        margin: 2rem auto;
         width: 100px;
         height: 2px;
     }

@@ -8,8 +8,9 @@
     @media screen and (min-width: $breakpoint-large) {
         padding-top: 0;
     }
+}
 
-    .container {
-        
-    }
+#presentation {
+    position: relative;
+    top: -45px;
 }

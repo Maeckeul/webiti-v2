@@ -8,3 +8,14 @@
     content:'≡';
     font-size: 70px;
 }
+
+
+#menu-button.close{
+    color: $pink;
+}
+
+#menu-button.close::after{
+    content:'×';
+    font-size: 70px;
+}
+
